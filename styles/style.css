@@ -1,0 +1,109 @@
+/*........google font........*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Gulzar&family=Heebo:wght@800&family=Libre+Baskerville&family=Merriweather:wght@400;700&family=Oswald:wght@500&family=PT+Serif:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+/*........main section.....*/
+
+
+body {
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Gulzar', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/*.........player stylesheet.....*/
+
+.btn2 {
+
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ACACAC;
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: rgb(20, 20, 20);
+
+
+}
+
+
+
+.player-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.players {
+    border: 1px solid #EBEBEB;
+    border-radius: 10PX;
+    margin: 10px 10px 10px 10px;
+    width: 311PX;
+    height: 330PX;
+
+}
+
+/*........footer.......*/
+footer {
+    color: white;
+    background-color: palevioletred;
+    height: 500px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.footer-manu {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-manu ul {
+    display: flex;
+}
+
+.footer-manu li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-manu ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.Social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
