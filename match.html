@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T20 World Cup 2022</title>
+    <!-----------font awesome-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-----------stylesheet-------->
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /*..................tablet  drivces............*/
+
+        @media only screen and (mani-width:688px) and (max-width:922px) {
+            .container {
+                background: red;
+                width: 100%;
+            }
+
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            /*........google font........*/
+            @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Gulzar&family=Heebo:wght@800&family=Libre+Baskerville&family=Merriweather:wght@400;700&family=Oswald:wght@500&family=PT+Serif:ital,wght@0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+            body {
+                font-family: 'Gentium Book Plus', serif;
+                font-family: 'Gulzar', serif;
+                font-family: 'Heebo', sans-serif;
+                font-family: 'Libre Baskerville', serif;
+                font-family: 'Merriweather', serif;
+                font-family: 'Oswald', sans-serif;
+                font-family: 'Playfair Display', serif;
+                font-family: 'Poppins', sans-serif;
+                font-family: 'PT Serif', serif;
+
+            }
+
+            header {
+                background: palevioletred;
+                border-radius: 30px;
+                height: 680px;
+                width: 1330px;
+
+            }
+
+            .container {
+
+                display: flex;
+                align-items: center;
+            }
+
+            .thumbnail-content {
+                width: 540px;
+                height: 430px;
+                padding: 100px;
+            }
+
+            .thumbnail-content h1 {
+                color: aliceblue;
+                margin-bottom: 0px;
+                line-height: 80px;
+                font-size: 70px;
+            }
+
+            .thumbnail-content p {
+                color: aliceblue;
+                font-weight: 400;
+                line-height: 26px;
+                font-size: 14px;
+            }
+
+            span {
+                color: orange;
+            }
+
+
+            .thumbnail-btn {
+                background: orange;
+                font-size: 20px;
+                padding: 18px;
+                width: 138px;
+                height: 25px;
+                margin-top: 35px;
+                border-radius: 10px;
+                color: #EBEBEB;
+                text-align: center;
+                transition: width 2s;
+
+            }
+
+            .thumbnail-btn:hover {
+                width: 400px;
+                background: brown;
+                text-align: center;
+                transition-timing-function: ease-in-out;
+            }
+
+            .thumbnail-btn a {
+                text-decoration: none;
+                margin-right: 10px;
+                color: #EBEBEB;
+            }
+
+            .thumbnail-img img {
+                width: 575px;
+                height: 580px;
+                padding: 30px 80px 0px 24px;
+
+            }
+
+
+
+
+
+
+            /*........match detail ar info......*/
+            .match-container {
+                display: flex;
+
+
+            }
+
+
+            .match-menu {
+                margin-top: 50px;
+                margin-bottom: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                height: 200px;
+                width: 300px;
+                background: #1c374c;
+                border-radius: 10px;
+
+
+            }
+
+            .match-menu ul {
+                padding: 0px;
+                list-style: none;
+            }
+
+            .match-menu ul li {
+                text-align: center;
+                justify-content: center;
+                font-size: 20px;
+
+            }
+
+            .active {
+                text-align: center;
+                background-color: #EBEBEB;
+                width: 150px;
+                height: 40px;
+                border-radius: 10px;
+                margin-bottom: 22px;
+                font-size: 20px;
+
+            }
+
+
+            .activeA {
+                text-align: center;
+                background-color: orange;
+                width: 150px;
+                height: 40px;
+                border-radius: 10px;
+                margin-bottom: 22px;
+                font-size: 20px;
+                transition: all 0.3 ease 0s;
+            }
+
+
+            .activeA:hover {
+                background: red;
+                text-align: center;
+            }
+
+            /*............players img or detail section......*/
+
+            .player-img-container {
+
+                height: 300px;
+                width: 1330px;
+                padding: 30px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            .player-img-content {
+                margin-bottom: 20px;
+            }
+
+            .player-img {
+                text-align: center;
+                border: 1px solid #EBEBEB;
+                border-radius: 15px;
+                margin-right: 5px;
+                width: 313px;
+                height: 200px;
+                margin-top: 10px;
+                margin-left: 2px;
+                padding-bottom: 10px;
+            }
+
+
+
+
+            /*........footer.......*/
+            footer {
+                color: white;
+                background-color: palevioletred;
+                height: 200px;
+                align-items: center;
+                padding: 100px;
+                margin-top: 150px;
+
+            }
+
+            .footer-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .footer-manu {
+                margin-bottom: 20px;
+                font-size: 18px;
+
+            }
+
+            .footer-menus {
+                font-size: 20px;
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+
+
+            .footer-manu ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+
+            .footer-manu li {
+                padding-right: 10px;
+                display: block;
+            }
+
+            .footer-manu ul li a {
+
+                color: white;
+                text-decoration: none;
+            }
+
+            .Social-icon {
+                font-size: 20px;
+
+            }
+
+            .Social-icon :hover {
+                color: purple;
+            }
+
+            .link:hover {
+                color: orange;
+
+            }
+    </style>
+
+</head>
+
+<body>
+    <!-----------header star-------->
+    <header>
+
+        <div class="thumbnail-container">
+            <div class="container">
+                <div class="thumbnail-content">
+
+                    <h1>The Greatest <br>
+                        <span> show on the</span> <br>
+                        earth
+                    </h1>
+
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply <br>
+
+                        random text. It has roots in a piece of classical Latin literature <br>
+                        from 45 BC, making it over 2000 years old.</p>
+
+
+                    <div class="thumbnail-btn">
+                        <a class="btn" href="">Watch Live</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </div>
+                </div>
+
+                <div class="thumbnail-img">
+                    <img src="images/Banner Image.png" alt="">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-----------header end-------->
+
+    <!-----------match detail ar info---------->
+
+
+    <section class="match-detail">
+        <div class="match-container">
+            <div class="match-menu">
+
+
+                <ul>
+                    <li><input class="active" type="text" placeholder="Upcoming Match"> </li>
+                    <li><input class="active" type="text" placeholder="All Group"> </li>
+                    <li> <input class="activeA" type="text" placeholder="Blog"> </li>
+
+
+                </ul>
+            </div>
+
+            <!-----------players img or detail section ---------->
+
+            <div class="player-img-container">
+                <div class="player-img-content">
+
+
+                    <img src="images/germany Flag.png" alt="">VS
+                    <img src="images/Flag.png" alt="">
+
+                    <h3>Germany VS France</h3>
+                    <h4>April 01, 2023, 1.00 AM</h4>
+
+                </div>
+
+
+                <div class="player-img">
+
+                    <img src="images/germany Flag.png" alt="">VS
+                    <img src="images/Flag.png" alt="">
+
+
+                    <h3>Germany VS France</h3>
+                    <h4>April 01, 2023, 1.00 AM</h4>
+
+                </div>
+
+
+
+                <div class="player-img">
+
+                    <img src="images/germany Flag.png" alt="">VS
+                    <img src="images/Flag.png" alt="">
+
+
+
+                    <h3>Germany VS France</h3>
+                    <h4>April 01, 2023, 1.00 AM</h4>
+
+                </div>
+
+
+
+                <div class="player-img">
+
+                    <img src="images/germany Flag.png" alt="">VS
+                    <img src="images/Flag.png" alt="">
+
+
+
+                    <h3>Germany VS France</h3>
+                    <h4>April 01, 2023, 1.00 AM</h4>
+
+
+                </div>
+
+
+
+                <div class="player-img">
+
+                    <img src="images/germany Flag.png" alt="">VS
+                    <img src="images/Flag.png" alt="">
+
+
+                    <h3>Germany VS France</h3>
+                    <h4>April 01, 2023, 1.00 AM</h4>
+
+                </div>
+
+
+                <div class="player-img">
+
+                    <img src="images/germany Flag.png" alt="">VS
+                    <img src="images/Flag.png" alt="">
+
+
+                    <h3>Germany VS France</h3>
+                    <h4>April 01, 2023, 1.00 AM</h4>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!----------footer section------->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h1>Goal</h1>
+        </div>
+        <hr class="footer-line">
+        <!-----------nav section-------->
+
+        <div class="footer-manu">
+            <nav>
+                <ul class="footer-menus">
+
+                    <li><a href="">Contact Us </a></li> <br>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy </a></li>
+                    <li><a href="">Privacy setting </a></li>
+                    <li><a href=""> oal App</a></li>
+                    <li><a href="">Goal Live</a></li>
+                </ul>
+
+                <ul class="Social-icon">
+                    <li><i class="fa-brands fa-facebook"> </i><a class="link" href="http://www.facebook.com">
+                        </a>
+
+                    </li>
+                    <li><i class="fa-brands fa-google"></i><a class="link" href="http://www.google.com">
+                        </a></li>
+
+                    <li> <i class="fa-brands fa-youtube"></i> <br> <a class="link" href="http://www.youtube.com"></a>
+                    </li>
+                </ul>
+            </nav>
+    </footer>
+</body>
+
+</html>

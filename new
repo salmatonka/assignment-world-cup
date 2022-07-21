@@ -1,0 +1,69 @@
+/*........footer.......*/
+footer {
+    color: white;
+    background-color: palevioletred;
+    height: 300px;
+    align-items: center;
+    padding: 100px;
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+h1 {
+
+    font-size: 45px;
+}
+
+.footer-manu {
+    margin-bottom: 20px;
+    font-size: 18px;
+
+}
+
+.footer-menus {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.footer-manu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.footer-manu li {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-manu ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.Social-icon {
+    font-size: 20px;
+
+}
+
+.Social-icon :hover {
+    color: purple;
+}
+
+.link:hover {
+    color: orange;

@@ -108,10 +108,14 @@ span {
 
 
 .match-menu {
-    margin-top: 50px;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 40px;
+
+
     height: 320px;
-    width: 330px;
+    width: 400px;
     background: #1c374c;
     border-radius: 10px;
 
@@ -128,8 +132,6 @@ span {
     font-size: 20px;
 
 }
-
-
 
 .active {
     text-align: center;
@@ -151,7 +153,7 @@ span {
     border-radius: 10px;
     margin-bottom: 22px;
     font-size: 20px;
-    transition: all 0.3 ease 0s;
+    transition: all 0.3 ease 2s;
 }
 
 
@@ -172,15 +174,23 @@ span {
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+
 }
 
 .player-img {
     box-sizing: border-box;
     border: 1px solid #EBEBEB;
     border-radius: 15px;
-    margin right: 5px;
-    width: 313px;
+    width: 280px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 80px;
 
+}
+
+.player-img img {
+    width: 280px;
 }
 
 .button {
@@ -190,11 +200,8 @@ span {
     text-align: center;
     font-weight: bold;
     font-size: 15px;
+
 }
-
-
-
-
 
 /*........footer.......*/
 footer {
@@ -227,14 +234,16 @@ h1 {
 
 .footer-menus {
     font-size: 20px;
+    display: flex;
     justify-content: space-evenly;
+
 }
 
 
 .footer-manu ul {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
 
 }

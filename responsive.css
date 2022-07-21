@@ -1,0 +1,12 @@
+/*..................tablet  drivces............*/
+
+@media only screen and (mani-width:688px) and (max-width:922px) {
+    .container {
+        background: red;
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
